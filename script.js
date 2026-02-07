@@ -312,7 +312,7 @@ function speakWord() {
 
     if (preferredVoice) utterance.voice = preferredVoice;
     utterance.lang = 'en-US';
-    utterance.rate = 0.8;
+    utterance.rate = 0.6;
     window.speechSynthesis.speak(utterance);
 }
 
