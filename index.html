@@ -53,18 +53,17 @@
                 </div>
             </div>
 
-            <!-- Centered Audio Button -->
-            <div class="audio-btn-center-wrapper">
-                <button class="speak-btn-main" onclick="speakWord()">
-                    <i class="fas fa-volume-up"></i> <span>הקרא</span>
-                </button>
-            </div>
-
             <div class="card-stage">
                 <div class="premium-card-container" id="flashcard" onclick="flipCard()">
                     <div class="card-side front">
                         <div class="difficulty-badge" id="practice-diff">Medium</div>
                         <h2 class="card-word" id="practice-eng">English</h2>
+
+                        <button class="speak-btn-main" onclick="event.stopPropagation(); speakWord()"
+                            style="margin-bottom: 2rem;">
+                            <i class="fas fa-volume-up"></i> <span>הקרא</span>
+                        </button>
+
                         <p class="card-example" id="practice-example">This is an example sentence.</p>
                         <p class="card-footer-hint">לחץ כדי לראות תרגום</p>
                     </div>
@@ -104,7 +103,7 @@
             <div class="quiz-header-info">
                 <div class="difficulty-badge" id="quiz-diff">Common</div>
                 <h2 class="quiz-question-word" id="quiz-eng">Word</h2>
-                <button class="nav-btn" onclick="speakWord()" style="margin: 0 auto;">
+                <button class="speak-btn-main" onclick="speakWord()" style="margin: 0 auto;">
                     <i class="fas fa-volume-up"></i> <span>הקרא</span>
                 </button>
             </div>
