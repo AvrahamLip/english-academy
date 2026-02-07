@@ -46,7 +46,7 @@ const vocabulary = [
     { "english": "poor", "hebrew": "עני" },
     { "english": "prize", "hebrew": "פרס" },
     { "english": "right", "hebrew": "ימין/נכון/צודק" },
-    { "english": "second", "hebrew": "שני" },
+    { "english": "second", "hebrew": "שניה" },
     { "english": "some", "hebrew": "כמה/קצת" },
     { "english": "table tennis", "hebrew": "טניס שולחן" },
     { "english": "time", "hebrew": "זמן" },

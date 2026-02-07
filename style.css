@@ -43,6 +43,7 @@ h1 {
     margin-bottom: 0.5rem;
     background: linear-gradient(to right, #818cf8, #f472b6);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
 }
@@ -258,4 +259,51 @@ h1 {
     .card-container {
         width: 300px;
         height: 400px;
-        margin-top:
+    }
+}
+
+/* Footer & Credits */
+footer {
+    margin-top: 5rem;
+    padding: 3rem 1rem;
+    border-top: 1px solid var(--glass-border);
+    width: 100%;
+    color: var(--text-muted);
+}
+
+footer p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    /* Changed from var(--text-main) for better contrast */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Slightly more opaque */
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(5px);
+}
+
+.social-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
