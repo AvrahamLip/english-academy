@@ -259,6 +259,12 @@ h1.main-title {
     filter: brightness(1.1);
 }
 
+.audio-btn-center-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
 /* 3D Flashcard */
 .card-stage {
     flex: 1;
