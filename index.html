@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -45,7 +47,8 @@
                     <p class="subtitle" style="margin-bottom: 1rem;">מה התרגום הנכון של:</p>
                     <span class="quiz-word" id="quiz-eng">Word</span>
                     <div style="margin-top: 1rem;">
-                        <button class="btn icon-btn" onclick="speakWord()" style="width: 40px; height: 400px; width: 40px; height: 40px; font-size: 1rem;">🔊</button>
+                        <button class="btn icon-btn" onclick="speakWord()"
+                            style="width: 40px; height: 400px; width: 40px; height: 40px; font-size: 1rem;">🔊</button>
                     </div>
                 </div>
                 <div class="options-grid" id="options-grid">
@@ -62,8 +65,17 @@
             <button class="btn" onclick="prevWord()">הקודם</button>
             <button class="btn" onclick="nextWord()">הבא</button>
         </div>
+
+        <footer>
+            <p>נוצר על ידי <strong>Avraham Lipscitz</strong></p>
+            <div class="social-links">
+                <a href="www.linkedin.com/in/avrahamlipscitz" target="_blank" class="social-btn">LinkedIn</a>
+                <a href="mailto:lip.avi@gmail.com" class="social-btn">Email Me</a>
+            </div>
+        </footer>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
