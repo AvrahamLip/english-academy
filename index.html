@@ -9,6 +9,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Robust Footer Styles to ensure visibility on all platforms */
+        footer {
+            margin-top: 5rem;
+            padding: 3rem 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+            color: #94a3b8;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white !important;
+            text-decoration: none !important;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.8rem 1.2rem;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.15) !important;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .social-btn:hover {
+            background: #6366f1 !important;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.4);
+        }
+    </style>
 </head>
 
 <body>
@@ -69,9 +111,15 @@
         <footer>
             <p>נוצר על ידי <strong>Avraham Lipscitz</strong></p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/avrahamlipscitz" target="_blank" class="social-btn">LinkedIn</a>
-                <a href="mailto:lip.avi@gmail.com" class="social-btn">Email Me</a>
-                <a href="https://wa.me/972508853348" target="_blank" class="social-btn">WhatsApp</a>
+                <a href="https://www.linkedin.com/in/avrahamlipscitz" target="_blank" class="social-btn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:lip.avi@gmail.com" class="social-btn">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="https://wa.me/972508853348" target="_blank" class="social-btn">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
             </div>
         </footer>
     </div>
