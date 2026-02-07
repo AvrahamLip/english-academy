@@ -258,38 +258,4 @@ h1 {
     .card-container {
         width: 300px;
         height: 400px;
-    }
-}
-
-footer {
-    margin-top: 5rem;
-    padding: 2rem;
-    border-top: 1px solid var(--glass-border);
-    width: 100%;
-    color: var(--text-muted);
-}
-
-.social-links {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.social-btn {
-    color: var(--primary);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    background: var(--card-bg);
-    border: 1px solid var(--glass-border);
-    transition: all 0.3s;
-}
-
-.social-btn:hover {
-    background: var(--primary);
-    color: white;
-    transform: translateY(-2px);
-}
+        margin-top:
