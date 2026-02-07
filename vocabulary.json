@@ -1,79 +1,695 @@
 [
-  {"english": "(be) called", "hebrew": "נקרא"},
-  {"english": "adult", "hebrew": "מבוגר"},
-  {"english": "ago", "hebrew": "לפני"},
-  {"english": "aunt", "hebrew": "דודה"},
-  {"english": "choose", "hebrew": "לבחור"},
-  {"english": "country", "hebrew": "מדינה/ארץ"},
-  {"english": "excited", "hebrew": "מתרגש"},
-  {"english": "fix", "hebrew": "לתקן"},
-  {"english": "hard", "hebrew": "קשה"},
-  {"english": "hurt", "hebrew": "לפגוע/להכאיב"},
-  {"english": "interesting", "hebrew": "מעניין"},
-  {"english": "lie", "hebrew": "לשקר"},
-  {"english": "minute", "hebrew": "דקה"},
-  {"english": "move", "hebrew": "לזוז/להזיז"},
-  {"english": "noise", "hebrew": "רעש"},
-  {"english": "or", "hebrew": "או"},
-  {"english": "parent", "hebrew": "הורה"},
-  {"english": "player", "hebrew": "שחקן"},
-  {"english": "prepare", "hebrew": "להכין"},
-  {"english": "race", "hebrew": "מרוץ"},
-  {"english": "safe", "hebrew": "בטוח"},
-  {"english": "sign", "hebrew": "שלט/לחתום"},
-  {"english": "son", "hebrew": "בן"},
-  {"english": "think", "hebrew": "לחשוב"},
-  {"english": "true", "hebrew": "נכון"},
-  {"english": "way", "hebrew": "דרך"},
-  {"english": "a quarter past", "hebrew": "רבע אחרי"},
-  {"english": "after", "hebrew": "אחרי"},
-  {"english": "always", "hebrew": "תמיד"},
-  {"english": "because", "hebrew": "בגלל/מפני ש"},
-  {"english": "clock", "hebrew": "שעון"},
-  {"english": "cry", "hebrew": "לבכות"},
-  {"english": "find", "hebrew": "למצוא"},
-  {"english": "get", "hebrew": "לקבל"},
-  {"english": "hour", "hebrew": "שעה"},
-  {"english": "ice", "hebrew": "קרח"},
-  {"english": "keep", "hebrew": "לשמור"},
-  {"english": "many", "hebrew": "הרבה"},
-  {"english": "money", "hebrew": "כסף"},
-  {"english": "need", "hebrew": "צריך"},
-  {"english": "of", "hebrew": "של/מ..."},
-  {"english": "our", "hebrew": "שלנו"},
-  {"english": "place", "hebrew": "מקום"},
-  {"english": "poor", "hebrew": "עני"},
-  {"english": "prize", "hebrew": "פרס"},
-  {"english": "right", "hebrew": "ימין/נכון/צודק"},
-  {"english": "second", "hebrew": "שני"},
-  {"english": "some", "hebrew": "כמה/קצת"},
-  {"english": "table tennis", "hebrew": "טניס שולחן"},
-  {"english": "time", "hebrew": "זמן"},
-  {"english": "us", "hebrew": "אותנו/לנו"},
-  {"english": "winner", "hebrew": "מנצח"},
-  {"english": "a quarter to", "hebrew": "רבע ל"},
-  {"english": "again", "hebrew": "שוב"},
-  {"english": "artist", "hebrew": "אמן"},
-  {"english": "build", "hebrew": "לבנות"},
-  {"english": "club", "hebrew": "מועדון"},
-  {"english": "easy", "hebrew": "קל"},
-  {"english": "first", "hebrew": "ראשון"},
-  {"english": "get up", "hebrew": "לקום"},
-  {"english": "how", "hebrew": "איך"},
-  {"english": "important", "hebrew": "חשוב"},
-  {"english": "later", "hebrew": "מאוחר יותר"},
-  {"english": "medal", "hebrew": "מדליה"},
-  {"english": "more", "hebrew": "עוד/יותר"},
-  {"english": "neighbor", "hebrew": "שכן"},
-  {"english": "Olympic Games", "hebrew": "המשחקים האולימפיים"},
-  {"english": "paint", "hebrew": "לצבוע/לצייר"},
-  {"english": "plate", "hebrew": "צלחת"},
-  {"english": "practice", "hebrew": "להתאמן"},
-  {"english": "problem", "hebrew": "בעיה"},
-  {"english": "road", "hebrew": "כביש/דרך"},
-  {"english": "sick", "hebrew": "חולה"},
-  {"english": "something", "hebrew": "משהו"},
-  {"english": "them", "hebrew": "אותם"},
-  {"english": "tomorrow", "hebrew": "מחר"},
-  {"english": "was", "hebrew": "היה"}
+    {
+        "id": "f4a315d2-905b-49bb-8641-e86767c4c8cd",
+        "word": "(be) called",
+        "translation": "נקרא",
+        "example": "My name is John, I am called John.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "71b265e5-930a-4111-84c8-a0668d92bf17",
+        "word": "adult",
+        "translation": "מבוגר",
+        "example": "My father is an adult.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "fb61d7a9-1f29-4f51-9755-a31ffc06ecb7",
+        "word": "ago",
+        "translation": "לפני",
+        "example": "I saw him two days ago.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "ef98a5ab-c2b3-4ccc-84cc-8b262ef3d23d",
+        "word": "aunt",
+        "translation": "דודה",
+        "example": "My aunt is my mother sister.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "a6fb9679-ff07-4d21-96dc-a56e4f49ccc0",
+        "word": "choose",
+        "translation": "לבחור",
+        "example": "I choose this book.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "d461436d-1476-41f1-9538-d57ae9785b9b",
+        "word": "country",
+        "translation": "מדינה/ארץ",
+        "example": "I love my country.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "38c821f6-39bd-41fe-847b-d8115b56bbf8",
+        "word": "excited",
+        "translation": "מתרגש",
+        "example": "I am very excited about the party.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "57147279-1bb1-456b-8e74-dffba53296c8",
+        "word": "fix",
+        "translation": "לתקן",
+        "example": "Please fix the broken chair.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "6d140803-7991-4996-88b5-45b8e156af16",
+        "word": "hard",
+        "translation": "קשה",
+        "example": "This math problem is hard.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "9e10b67b-8638-452b-81be-a4d8b1e9f367",
+        "word": "hurt",
+        "translation": "לפגוע/להכאיב",
+        "example": "My foot hurts when I run.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "40fbfd2d-94de-4338-aae1-276f0a1e8019",
+        "word": "interesting",
+        "translation": "מעניין",
+        "example": "This book is very interesting.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "8c9d08cc-d974-4f8c-a3ee-38ca917b0821",
+        "word": "lie",
+        "translation": "לשקר",
+        "example": "Do not lie to me.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "219428fd-da80-4bc1-86ed-58039b6cde53",
+        "word": "minute",
+        "translation": "דקה",
+        "example": "Wait a minute, I am coming.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "bbbf82cf-5489-413f-a681-d513cf6a9395",
+        "word": "move",
+        "translation": "לזוז/להזיז",
+        "example": "Please move the table to the corner.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "9f381c8a-579a-49d3-a651-108cd9ab3be2",
+        "word": "noise",
+        "translation": "רעש",
+        "example": "The noise from the street is loud.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "7af22a75-62ac-4aa3-893e-826182b7c8a5",
+        "word": "or",
+        "translation": "או",
+        "example": "Do you want tea or coffee?",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "0fea4fce-766f-42a4-81b2-5a6d1fbc4bbe",
+        "word": "parent",
+        "translation": "הורה",
+        "example": "My parents work hard.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "3992d320-dedd-46b8-bd4e-5d6b91660601",
+        "word": "player",
+        "translation": "שחקן",
+        "example": "He is a professional football player.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "f494cbf0-f671-4b92-a918-0a300eddf631",
+        "word": "prepare",
+        "translation": "להכין",
+        "example": "I prepare breakfast every morning.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "5d9f9bbe-8adf-4d2e-892e-f4cdd5fc61c1",
+        "word": "race",
+        "translation": "מרוץ",
+        "example": "I won the race yesterday.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "49db5e87-0994-412a-a75a-ecf20b06222a",
+        "word": "safe",
+        "translation": "בטוח",
+        "example": "It is safe to cross here.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "c204d4ae-7481-4b60-ba0b-15d8bff30caa",
+        "word": "sign",
+        "translation": "שלט/לחתום",
+        "example": "Please sign your name on the paper.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "83cf5691-b5c6-4af1-b5c6-4750224fef48",
+        "word": "son",
+        "translation": "בן",
+        "example": "My son is ten years old.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "266f3af3-3d80-4123-b2a9-59caec1a3943",
+        "word": "think",
+        "translation": "לחשוב",
+        "example": "What do you think about this?",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "ca60cabf-6af0-4a4e-8bf2-1e6873d36cdc",
+        "word": "true",
+        "translation": "נכון",
+        "example": "Is this story true?",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "ab050fb6-c2be-4f33-8725-762ccc0fe89b",
+        "word": "way",
+        "translation": "דרך",
+        "example": "Which way is the station?",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "37156441-d7a2-44e3-92f9-a537aa25066b",
+        "word": "a quarter past",
+        "translation": "רבע אחרי",
+        "example": "It is a quarter past three.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "9b5cb74f-c8f1-401d-8e5e-42f0ec3276cb",
+        "word": "after",
+        "translation": "אחרי",
+        "example": "I will see you after school.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "1e8c2eb1-526a-41b1-89db-c160bd2e7caa",
+        "word": "always",
+        "translation": "תמיד",
+        "example": "I always brush my teeth.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "5df13fee-bbf1-45a9-9f6b-8f20fd627da4",
+        "word": "because",
+        "translation": "בגלל/מפני ש",
+        "example": "I cannot go because I am sick.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "712e2773-c8a8-4902-8c6d-719ccacea8e8",
+        "word": "clock",
+        "translation": "שעון",
+        "example": "The clock shows three oclock.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "e1b8abfe-a5fe-4003-9a90-f5c8e80d24c6",
+        "word": "cry",
+        "translation": "לבכות",
+        "example": "The baby cries when hungry.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "aaaac594-9b79-4b0e-813d-914df185dfe8",
+        "word": "find",
+        "translation": "למצוא",
+        "example": "I cannot find my keys.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "bcf40a5c-da64-43ac-abf1-16974b07cac3",
+        "word": "get",
+        "translation": "לקבל",
+        "example": "What did you get for your birthday?",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "c8416426-5df7-4f8d-aa26-aa8d9035cf29",
+        "word": "hour",
+        "translation": "שעה",
+        "example": "I waited for one hour.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "aa9e5e49-f28d-4bd8-8d29-f03277da19e3",
+        "word": "ice",
+        "translation": "קרח",
+        "example": "I like ice cream in summer.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "b70d7bdc-5075-4417-a8d8-d9011565a33a",
+        "word": "keep",
+        "translation": "לשמור",
+        "example": "Please keep this secret.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "7c3721ea-d2c9-44df-89d1-7bc68c601d42",
+        "word": "many",
+        "translation": "הרבה",
+        "example": "There are many cars on the road.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "f76dc83e-4eaf-4be1-a05a-5d1a47e95ae4",
+        "word": "money",
+        "translation": "כסף",
+        "example": "How much money do you have?",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "560d789a-45d0-4098-a186-874c4a4b7785",
+        "word": "need",
+        "translation": "צריך",
+        "example": "I need help with my homework.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "0960a08a-3868-41ed-a12f-2d4b44b65073",
+        "word": "of",
+        "translation": "של/מ...",
+        "example": "This is the house of my friend.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "2a96235a-f14b-4af0-b20b-800fd825594a",
+        "word": "our",
+        "translation": "שלנו",
+        "example": "This is our school.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "323248c1-b046-4351-b8b9-8341b9dc4884",
+        "word": "place",
+        "translation": "מקום",
+        "example": "This is a nice place to visit.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "1c4202d5-47e5-4fc3-8ad1-54f90f7f8fca",
+        "word": "poor",
+        "translation": "עני",
+        "example": "Many poor people need help.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "a33b952c-2b63-4502-9b52-12fe12a3774d",
+        "word": "prize",
+        "translation": "פרס",
+        "example": "He won a prize in the competition.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "047f0b51-350d-4c2a-a3c6-0579e9ceb10b",
+        "word": "right",
+        "translation": "ימין/נכון/צודק",
+        "example": "Your answer is right.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "c239e152-775a-4ad3-bc4f-438da8755425",
+        "word": "second",
+        "translation": "שני",
+        "example": "This is the second time I see you.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "c32a14e8-7a03-4bd1-b88d-1d0bf7f8db79",
+        "word": "some",
+        "translation": "כמה/קצת",
+        "example": "Some people like coffee.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "229e5ac1-d0ed-4bb9-b600-3b9276adc022",
+        "word": "table tennis",
+        "translation": "טניס שולחן",
+        "example": "We play table tennis after school.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "35222d3e-6f3d-4736-953e-a8fc9c33d01f",
+        "word": "time",
+        "translation": "זמן",
+        "example": "What time is it now?",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "e7852077-9bc4-435d-b673-d5f24e7f147a",
+        "word": "us",
+        "translation": "אותנו/לנו",
+        "example": "Please give it to us.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "3230c94d-644c-4fdd-a68e-38cd704f722f",
+        "word": "winner",
+        "translation": "מנצח",
+        "example": "The winner received a medal.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "b03a35d7-a5b5-4fb9-93ce-e9e8c6f61f64",
+        "word": "a quarter to",
+        "translation": "רבע ל",
+        "example": "It is a quarter to five.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "de912b2e-f065-4c90-8761-7948c0747f04",
+        "word": "again",
+        "translation": "שוב",
+        "example": "Can you say that again?",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "98a8984f-d444-43a9-8188-ddfa0cc931f0",
+        "word": "artist",
+        "translation": "אמן",
+        "example": "He is a famous artist.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "96068d76-2e50-464d-a77e-1673fa722cb6",
+        "word": "build",
+        "translation": "לבנות",
+        "example": "We will build a new house.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "08b4b8ac-eca6-4fd9-819b-09de0a01ab74",
+        "word": "club",
+        "translation": "מועדון",
+        "example": "I am a member of the sports club.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "00dd60d5-08f4-430a-a0a5-38503576fbe1",
+        "word": "easy",
+        "translation": "קל",
+        "example": "This question is easy.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "f9d8d94f-7159-41d1-8dda-254f88460cbe",
+        "word": "first",
+        "translation": "ראשון",
+        "example": "He was the first to arrive.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "8ac44c70-5d0b-436e-b966-70841d94954a",
+        "word": "get up",
+        "translation": "לקום",
+        "example": "I get up at seven every day.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "8d57b55b-34ff-4285-8b27-fe4257775cfd",
+        "word": "how",
+        "translation": "איך",
+        "example": "How are you today?",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "68c33ea5-a3aa-4cdc-ab48-e71b2070f8fd",
+        "word": "important",
+        "translation": "חשוב",
+        "example": "Education is very important.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "2b6b91cb-ff1d-4efb-a5a0-b3a62bd1a78f",
+        "word": "later",
+        "translation": "מאוחר יותר",
+        "example": "I will call you later.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "b5286a5d-7859-47ec-ba9d-d352263e8975",
+        "word": "medal",
+        "translation": "מדליה",
+        "example": "She won a gold medal.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "c1b728e9-bf10-4082-b4bc-d487157de8d4",
+        "word": "more",
+        "translation": "עוד/יותר",
+        "example": "I want more cake please.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "abb18e3e-8934-45d9-9acf-03a30a1dcc32",
+        "word": "neighbor",
+        "translation": "שכן",
+        "example": "My neighbor is very friendly.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "0a6f41d2-ce25-4453-a762-f83529b4f95b",
+        "word": "Olympic Games",
+        "translation": "המשחקים האולימפיים",
+        "example": "Athletes compete at the Olympic Games.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "hard",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "12078fc8-260a-4cf0-8927-f087fbece0c0",
+        "word": "paint",
+        "translation": "לצבוע/לצייר",
+        "example": "I like to paint pictures.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "35be948b-13b1-4577-bc7e-bc41c1a91a9d",
+        "word": "plate",
+        "translation": "צלחת",
+        "example": "Put the food on a plate.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "ae63fb62-71e1-4d27-8fa5-7be8bb5de957",
+        "word": "practice",
+        "translation": "להתאמן",
+        "example": "I practice the piano every day.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "df06fd7b-c309-43f2-a7d0-866b6a6bc7ca",
+        "word": "problem",
+        "translation": "בעיה",
+        "example": "Can you help me with this problem?",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "medium",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "6ddde657-4556-4469-ab8d-f72b8faf505d",
+        "word": "road",
+        "translation": "כביש/דרך",
+        "example": "The road is very busy today.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "f79223a0-ac4d-47dc-ae2e-a40de5e5d929",
+        "word": "sick",
+        "translation": "חולה",
+        "example": "He is sick so he cannot go to school.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "75167116-086b-476b-a0d3-f87dff8a058a",
+        "word": "something",
+        "translation": "משהו",
+        "example": "I forgot something at home.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "5dd8395a-ab31-44ec-86ee-3efc7b5a7dac",
+        "word": "them",
+        "translation": "אותם",
+        "example": "I saw them yesterday.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "847f9611-dea0-43b6-b51b-e8018408646e",
+        "word": "tomorrow",
+        "translation": "מחר",
+        "example": "The exam is tomorrow.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    },
+    {
+        "id": "0ac3289d-83ae-4a37-a141-a0630ea0d8bd",
+        "word": "was",
+        "translation": "היה",
+        "example": "Yesterday was a sunny day.",
+        "unit": "Fantastic Five Unit 2",
+        "difficulty": "easy",
+        "created_at": "2026-02-07 20:01:38.759631+00"
+    }
 ]

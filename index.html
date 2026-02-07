@@ -4,122 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Academy - Fantastic Five</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vocabulary Master - Learn English Words</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Robust Footer Styles to ensure visibility on all platforms */
-        footer {
-            margin-top: 5rem;
-            padding: 3rem 1rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            width: 100%;
-            color: #94a3b8;
-            text-align: center;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
-        }
-
-        .social-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: white !important;
-            text-decoration: none !important;
-            font-weight: 600;
-            font-size: 1rem;
-            padding: 0.8rem 1.2rem;
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.15) !important;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-            backdrop-filter: blur(5px);
-        }
-
-        .social-btn:hover {
-            background: #6366f1 !important;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.4);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>English Academy</h1>
-            <p class="subtitle">Fantastic Five - Unit 2 Vocabulary</p>
-        </header>
+    <div class="app-container">
+        <!-- Home Screen -->
+        <section id="home-screen" class="container">
+            <h1 class="main-title">Vocabulary Master</h1>
+            <p class="hero-subtitle">Fantastic Five Unit 2 • <span id="word-count-home">0</span> מילים</p>
 
-        <nav class="mode-selector">
-            <button class="btn active" id="mode-practice" onclick="setMode('practice')">למידה (Flashcards)</button>
-            <button class="btn" id="mode-quiz" onclick="setMode('quiz')">תרגול (Trivia)</button>
-        </nav>
+            <div class="mode-grid">
+                <div class="mode-card" onclick="setMode('practice')">
+                    <div class="mode-icon practice-icon">📖</div>
+                    <div class="mode-info">
+                        <h2 class="mode-title">מצב למידה</h2>
+                        <p class="mode-desc">כרטיסיות אינטראקטיביות עם הקראת מילים</p>
+                    </div>
+                </div>
 
-        <main class="game-area">
-            <!-- Practice Mode -->
-            <div id="practice-view" class="card-container" onclick="flipCard()">
-                <div class="card" id="flashcard">
-                    <div class="card-face card-front">
-                        <span class="word-english" id="practice-eng">English</span>
-                        <div class="controls" onclick="event.stopPropagation()">
-                            <button class="btn icon-btn" onclick="speakWord()" title="הקרא">🔊</button>
+                <div class="mode-card" onclick="setMode('quiz')">
+                    <div class="mode-icon quiz-icon">🎯</div>
+                    <div class="mode-info">
+                        <h2 class="mode-title">מצב תרגול</h2>
+                        <p class="mode-desc">אתגר טריוויה עם 4 אפשרויות בחירה</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Screen -->
+        <section id="practice-screen" class="container">
+            <div class="screen-header">
+                <button class="nav-btn" onclick="setMode('home')">
+                    <i class="fas fa-home"></i> <span>בית</span>
+                </button>
+                <div class="progress-container">
+                    <div class="progress-track">
+                        <div id="practice-bar" class="progress-bar"></div>
+                    </div>
+                    <p class="progress-text" id="practice-num">0 / 0</p>
+                </div>
+                <button class="speak-btn-main" onclick="speakWord()">
+                    <i class="fas fa-volume-up"></i> <span>הקרא</span>
+                </button>
+            </div>
+
+            <div class="card-stage">
+                <div class="premium-card-container" id="flashcard" onclick="flipCard()">
+                    <div class="card-side front">
+                        <div class="difficulty-badge" id="practice-diff">Medium</div>
+                        <h2 class="card-word" id="practice-eng">English</h2>
+                        <p class="card-example" id="practice-example">This is an example sentence.</p>
+                        <p class="card-footer-hint">לחץ כדי לראות תרגום</p>
+                    </div>
+                    <div class="card-side back">
+                        <h2 class="card-translation" id="practice-heb">עברית</h2>
+                        <div
+                            style="width: 60px; height: 4px; background: linear-gradient(to right, #818cf8, #f472b6); margin-top: 1.5rem; border-radius: 999px;">
                         </div>
-                        <p class="hint">לחץ כדי לראות תרגום</p>
-                    </div>
-                    <div class="card-face card-back">
-                        <span class="word-hebrew" id="practice-heb">עברית</span>
-                        <p class="hint">לחץ כדי לחזור לאנגלית</p>
+                        <p class="card-footer-hint" style="margin-top: 2rem;">לחץ כדי לחזור</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Quiz Mode -->
-            <div id="quiz-view" class="quiz-container">
-                <div class="question-box">
-                    <p class="subtitle" style="margin-bottom: 1rem;">מה התרגום הנכון של:</p>
-                    <span class="quiz-word" id="quiz-eng">Word</span>
-                    <div style="margin-top: 1rem;">
-                        <button class="btn icon-btn" onclick="speakWord()"
-                            style="width: 40px; height: 400px; width: 40px; height: 40px; font-size: 1rem;">🔊</button>
+            <div class="bottom-controls">
+                <button class="icon-control-btn" onclick="prevWord()"><i class="fas fa-chevron-right"></i></button>
+                <button class="icon-control-btn" onclick="nextWord()"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="container">
+            <div class="screen-header">
+                <button class="nav-btn" onclick="setMode('home')">
+                    <i class="fas fa-home"></i> <span>בית</span>
+                </button>
+                <div class="progress-container">
+                    <div class="progress-track">
+                        <div id="quiz-bar" class="progress-bar"></div>
                     </div>
+                    <p class="progress-text" id="quiz-num">שאלה 0 מתוך 0</p>
                 </div>
-                <div class="options-grid" id="options-grid">
-                    <!-- Options injected via JS -->
-                </div>
-                <div class="stats">
-                    <span>נקודות: <span id="score">0</span></span>
-                    <span>מילים שנשארו: <span id="words-left">0</span></span>
+                <div class="nav-btn" style="cursor: default; border-color: rgba(236, 72, 153, 0.4);">
+                    <i class="fas fa-star" style="color: #fbbf24;"></i> <span id="quiz-score">Score: 0</span>
                 </div>
             </div>
-        </main>
 
-        <div class="controls" id="practice-controls">
-            <button class="btn" onclick="prevWord()">הקודם</button>
-            <button class="btn" onclick="nextWord()">הבא</button>
-        </div>
+            <div class="quiz-header-info">
+                <div class="difficulty-badge" id="quiz-diff">Common</div>
+                <h2 class="quiz-question-word" id="quiz-eng">Word</h2>
+                <button class="nav-btn" onclick="speakWord()" style="margin: 0 auto;">
+                    <i class="fas fa-volume-up"></i> <span>הקרא</span>
+                </button>
+            </div>
 
-        <footer>
-            <p>נוצר על ידי <strong>Avraham Lipscitz</strong></p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/avrahamlipscitz" target="_blank" class="social-btn">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="mailto:lip.avi@gmail.com" class="social-btn">
-                    <i class="fas fa-envelope"></i> Email Me
-                </a>
-                <a href="https://wa.me/972508853348" target="_blank" class="social-btn">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                </a>
+            <div class="options-grid-premium" id="options-grid">
+                <!-- Options injected via JS -->
+            </div>
+
+            <button id="next-q-btn" class="next-button" onclick="goToNextQuestion()" style="display: none;">
+                המשך לשאלה הבאה
+            </button>
+        </section>
+
+        <!-- Results Screen -->
+        <section id="results-screen" class="container" style="align-items: center; justify-content: center;">
+            <div class="results-card">
+                <div
+                    style="width: 6rem; height: 6rem; background: linear-gradient(to bottom right, #ec4899, #8b5cf6); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 2.5rem;">
+                    🎯</div>
+                <h2 id="results-headline" style="font-size: 3rem; margin-bottom: 1rem;">Keep Practicing!</h2>
+                <div class="results-score-big"><span id="final-score">0</span>/<span id="final-total">0</span></div>
+                <p class="results-percentage"><span id="final-percent">0</span>% נכון</p>
+
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <button class="next-button" onclick="restartQuiz()" style="margin: 0; padding: 1rem 2.5rem;">נסה
+                        שוב</button>
+                    <button class="nav-btn" onclick="setMode('home')"
+                        style="padding: 1rem 2.5rem; font-size: 1.25rem;">חזרה לבית</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Footer -->
+        <footer id="common-footer">
+            <div class="container">
+                <p>© 2026 Ai Ready. נוצר על ידי <strong>Avraham Lipscitz</strong></p>
+                <div class="social-bar">
+                    <a href="https://www.linkedin.com/in/avrahamlipscitz" target="_blank" class="premium-social-btn ln"
+                        title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:lip.avi@gmail.com" class="premium-social-btn em" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/972508853348" target="_blank" class="premium-social-btn wa" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
             </div>
         </footer>
     </div>
